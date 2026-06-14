@@ -8,23 +8,32 @@
         body { background: #FFE2A8; overflow: hidden; font-family: monospace;
         display:flex;flex-direction:column;height:100vh; }
         canvas { display: block; position: absolute; top: 0.5; left: 0.5; z-index: 1; }
-        .heading {
+         .heading {
             width:100%; height:10vh; display:flex; justify-content:center; align-items:center;
-            z-index: 2; background: rgba(0,0,0,1);
-            padding: 10px; border: 1px solid #FFF7E6; border-radius: 10px;
-            box-shadow: 0 0 20px rgba(255,255,255,0.5);
-            color: #000000; pointer-events: none;text-align: center;
+            z-index: 2; 
+            background: rgba(255,255,255,1); 
+            padding: 10px; 
+            border: 1px solid #000000;      
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15); 
+            color: #000000;                 
+            pointer-events: none;
+            text-align: center;
         }
         .console {
             width:80%; height:70vh ; margin:0 auto; margin-top:20px ; z-index: 2;
-            background: rgba(0, 0, 0, 0.85); padding: 30px;
-            border: 1px solid #A8F0FF; border-radius: 5px;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
-            color: #000000; pointer-events: none;
+            background: rgba(255, 255, 255, 0.85); /* 改為純白背景（帶微透明） */
+            padding: 30px;
+            border: 1px solid #000000;            /* 改為純黑邊框 */
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* 改為黑色陰影 */
+            color: #000000;                       /* 文字改為純黑 */
+            pointer-events: none;
         }
 
-        h1 { font-size: 1.5rem; margin-bottom: 20px; text-shadow: 0 0 5px #000000; }
+        h1 { font-size: 1.5rem; margin-bottom: 20px; text-shadow: 0 0 5px rgba(0,0,0,0.3); }
         p { margin-bottom: 10px; font-size: 0.9rem; }
+        
         .blink { animation: blink 1s infinite; }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
     </style>
