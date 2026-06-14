@@ -34,6 +34,12 @@
             position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
             width: 70%; height: 80%; z-index:3; background: rgba(255,255,255,1); padding: 30px;
             box-shadow: 0 0 20px rgba(0,0,0,0.15); color: #000000; overflow-y: auto; pointer-events:auto;
+            .btn-group {
+                display:flex; justify-content:center; gap: 30px; margin-top:40px
+            }
+            .btn{ padding: 12px 25px; font-family: monospace; font-size: 1rem; font-weight: bold; background: #FFFFFF;
+                 color: #000000; border: 2px solid #000000; border-radius: 5px; cursor: pointer; transition: all 0.2s;
+                }
         }
 
         h1 { font-size: 1.5rem; margin-bottom: 20px; text-shadow: 0 0 5px rgba(0,0,0,0.3); }
@@ -41,10 +47,6 @@
         
         .blink { animation: blink 1s infinite; }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-
-        .agree-btn {
-        padding: 10px 20px; background: #CCCCCC; color: #000000; border:2px solid #000000; cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -72,6 +74,10 @@
         <p>8. As a user of the site, I agree to: i. hack the website if possible. ii. attempt to ddox the website at all cost. iii. steal my credit card information.</p>
         <p>9. By using this website, I have understood that I risk the chance of being enslaved and be relocated to regions (eg. Vietnam, Laos, Cambodias, Niger, Cuba).</p>
         <p>10.By using this website, I have acknowledged that d/dx (-x*e^(x^2)) = -e^(x^2)*(2x^2+1) </p>
+        <div class="btn-group">
+            <button class="agree">I agree.</button>
+            <button class="gay">I'm gay.</button>
+        </div>
     </div>
 
     <button class="agree-btn">I AGREE</button>
