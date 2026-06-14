@@ -22,13 +22,18 @@
         }
         .console {
             width:80%; height:70vh ; margin:0 auto; margin-top:20px ; z-index: 2;
-            background: rgba(255, 255, 255, 0.85); /* 改為純白背景（帶微透明） */
+            background: rgba(255, 255, 255, 0.85); 
             padding: 30px;
-            border: 1px solid #000000;            /* 改為純黑邊框 */
+            border: 1px solid #000000;        
             border-radius: 5px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* 改為黑色陰影 */
-            color: #000000;                       /* 文字改為純黑 */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+            color: #000000;                  
             pointer-events: none;
+        }
+        .terms {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+            width: 70%; height: 80%; z-index:3; background: rgba(255,255,255,1); padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15); color: #000000; overflow-y: auto; pointer-events:auto;
         }
 
         h1 { font-size: 1.5rem; margin-bottom: 20px; text-shadow: 0 0 5px rgba(0,0,0,0.3); }
@@ -50,6 +55,9 @@
         <p> </p>
         <p>  <span class="blink">_</span></p>
     </div>
-        
+ 
+    <div class="terms">
+        <h1> Terms and Agreement </h1>
+    </div>
 </body>
 </html>
