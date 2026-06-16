@@ -78,5 +78,17 @@
         <button class"reject_btn">I'm gay</button>
     </div>
 
+    <script>
+        const termsWindow = document.querySelector('.terms');
+        const agreeBtn = document.querySelector('.accept_btn');
+        const reject_btn = document.querySelector('.reject_btn');
+        agreeBtn.addEventListener('click',function(){
+            termsWindow.classList.add('hidden');
+        });
+        reject_btn.addEventListener('click',function(){
+            termsWindow.classList.add('hidden');
+        });
+    </script>
+
 </body>
 </html>
