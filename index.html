@@ -37,7 +37,7 @@
         }
 
         .menu {
-            position:absolute; width:30%; height:100%; top:0%;left:0%; z-index:3; background:#FFF5DB;
+            position:absolute; width:20%; height:100%; top:0%;left:0%; z-index:3; background:#FFF5DB;
             padding:30px; box-shadow: 0 0 50px rgba(0,0,0,0.15); color:#000000; pointer-events:auto;
         }
 
@@ -92,6 +92,8 @@
         const agreeBtn = document.querySelector('.accept_btn');
         const reject_btn = document.querySelector('.reject_btn');
         const menu_btn = document.querySelector('.menu_btn')
+        const menuWindow = document.querySelector('.menu');
+        menuWindow.classList.add('hidden')
         agreeBtn.addEventListener('click',function(){
             termsWindow.classList.add('hidden');
         });
