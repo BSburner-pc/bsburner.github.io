@@ -18,6 +18,7 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.15); 
             color: #000000;                 
             text-align: center;
+            
 
         }
         .console {
@@ -102,7 +103,11 @@
             alert('I guess bro...? Ur gay asf alr not first time meeting you');
         });
         menu_btn.addEventListener('click',function(){
-            menuWindow.classList.remove('hidden');
+            if (menuWindow.classList.contains('hidden')){
+                menuWindow.classList.remove('hidden');
+            }else{
+                menuWindow.classList.add('hidden');
+            }
         })
     </script>
 
