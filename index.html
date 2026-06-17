@@ -19,6 +19,7 @@
             color: #000000;                 
             pointer-events: none;
             text-align: center;
+
         }
         .console {
             width:80%; height:70vh ; margin:0 auto; margin-top:20px ; z-index: 2;
@@ -49,6 +50,7 @@
 </head>
 <body>
     <div class="heading">
+        <button class="menu">Menu</button>
         <h1> BSburner Web </h1>
     </div>
     <div class="console">
@@ -61,7 +63,6 @@
         <p>  <span class="blink">_</span></p>
     </div>
  
-    <!-- 條款視窗完整保留，按鈕已完全清空 -->
     <div class="terms">
         <h1> Terms and Agreement </h1>
         <p>1. We don't value our client's privacy. Any information of user provided including IP adresses, locations etc sensitive information will be transferred directly to me. If you disagree with the gather of informations, we still do.  </p>
@@ -82,6 +83,7 @@
         const termsWindow = document.querySelector('.terms');
         const agreeBtn = document.querySelector('.accept_btn');
         const reject_btn = document.querySelector('.reject_btn');
+        const menu_btn = document.querySelector('.menu_btn')
         agreeBtn.addEventListener('click',function(){
             termsWindow.classList.add('hidden');
         });
@@ -89,6 +91,9 @@
             termsWindow.classList.add('hidden');
             alert('I guess bro...? Ur gay asf alr not first time meeting you');
         });
+        menu_btn.addEventListener('click',function(){
+            alert('menu btn clicked')
+        })
     </script>
 
 </body>
