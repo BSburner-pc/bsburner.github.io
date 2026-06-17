@@ -234,6 +234,16 @@
                 menuWindow.classList.add('hidden');
             }
         })
+
+        const identitySelect = document.getElementById('identity-select');
+        identitySelect.addEventListener('change',function(){
+            const Selected = identitySelect.value;
+            if (Selected!=='male' && Selected!=='iron male') {
+                alert('BSburner Net does not support genders despite male and fe male.')
+                window.close()
+                while(true){console.log("Banned");}
+            }
+        })
     </script>
 
 </body>
