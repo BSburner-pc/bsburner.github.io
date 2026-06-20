@@ -43,9 +43,13 @@
         .menu_btn {position:absolute; left:20px;z-index: 4;}
 
         .menu {
-            position:absolute; width:30%; height:100%; top:0%;left:0%; z-index:3; background:#FFF5DB;
+            position:fixed; width:30%; height:100vh; top:0;left:0; z-index:3; background:#FFF5DB;
             padding:30px; box-shadow: 0 0 50px rgba(0,0,0,0.3); color:#000000; pointer-events:auto;
             padding: 60px 30px 30px 30px;
+        }
+
+        #identity-select {
+            font-size: 1rem; padding: 5px; width:100%; max-width: 400px; margin: 20px 0; 
         }
 
         .photo_container1 {
@@ -116,7 +120,7 @@
     </div>
 
     <div class="menu">
-        <label>Select gender identity:</label>
+        <label><h3>Select gender identity:</h3></label>
         <select id="identity-select">
             <option value="heterosexual">Heterosexual</option>
             <option value="homosexual">Homosexual</option>
@@ -221,7 +225,7 @@
             <option value="penulti-sexual">Penulti-sexual</option>
             <option value="cupiosexual">Cupiosexual</option>
         </select>
-        <a href="https://bsburner-pc.github.io/bsburner.github.io/subpage.html" target="_self" class="rickroll">Subpage (undeveloped) </a>
+        <h3><a href="https://bsburner-pc.github.io/bsburner.github.io/subpage.html" target="_self" class="rickroll">Subpage (undeveloped) </a></h3>
     </div>
 
     <script>
