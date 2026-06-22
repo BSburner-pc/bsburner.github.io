@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple client-side validation (for demonstration purposes only)
+            if (username === 'BSburner' && password === 'N1gga-Nerd') {
+                alert('Key: DogTypeHtml. Send the key to me in whatsapp to collect free 100 robux');
+                // Redirect to the main page or dashboard
+                window.location.href = '/subpage.html';
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>

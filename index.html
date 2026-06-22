@@ -41,6 +41,7 @@
         }
 
         .menu_btn {position:absolute; left:20px;z-index: 4;}
+        .login_btn {position:absolute; right:50px; z-index: 2;}
 
         .menu {
             position:fixed; width:30%; height:100vh; top:0;left:0; z-index:3; background:#FFF5DB;
@@ -78,6 +79,7 @@
     <div class="heading">
         <button class="menu_btn">Menu</button>
         <h1> BSburner Web </h1>
+        <button class="login_btn">Login</button>
     </div>
     <div class="console">
         <h1>[ BSBURNER ]</h1>
@@ -234,6 +236,7 @@
         const reject_btn = document.querySelector('.reject_btn');
         const menu_btn = document.querySelector('.menu_btn')
         const menuWindow = document.querySelector('.menu');
+        const login_btn = document.querySelector('.login_btn');
         menuWindow.classList.add('hidden')
         agreeBtn.addEventListener('click',function(){
             termsWindow.classList.add('hidden');
@@ -248,6 +251,9 @@
             }else{
                 menuWindow.classList.add('hidden');
             }
+        })
+        login_btn.addEventListener('click',function(){
+            window.location.href = '/login.html';
         })
 
         const identitySelect = document.getElementById('identity-select');
